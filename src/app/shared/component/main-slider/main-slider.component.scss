@@ -1,0 +1,52 @@
+::ng-deep{
+    .mainSlider{
+        .owl-carousel {
+            .owl-item img{
+                height: 100vh;
+                // border: 5px solid orange;
+                object-fit: cover;
+            }
+            .owl-prev, .owl-next{
+                position: absolute;
+                top: 50%;
+                background-color: transparent !important;
+                color: #e50914 !important;
+                font-size: 32px;
+            }
+            .owl-prev{
+                left: 3%;
+            }
+            .owl-next{
+                right: 3%;
+            }
+        }
+        .movie-caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%;
+            background-image: linear-gradient(0deg, #181818 0, hsla(0, 0%, 9%, .987) 1.62%, hsla(0, 0%, 9%, .951) 3.1%, hsla(0, 0%, 9%, .896) 4.5%, hsla(0, 0%, 9%, .825) 5.8%, hsla(0, 0%, 9%, .741) 7.06%, hsla(0, 0%, 9%, .648) 8.24%, hsla(0, 0%, 9%, .55) 9.42%, hsla(0, 0%, 9%, .45) 10.58%, hsla(0, 0%, 9%, .352) 11.76%, hsla(0, 0%, 9%, .259) 12.94%, hsla(0, 0%, 9%, .175) 14.2%, hsla(0, 0%, 9%, .104) 15.5%, hsla(0, 0%, 9%, .049) 16.9%, hsla(0, 0%, 9%, .013) 18.38%, hsla(0, 0%, 9%, 0) 20%); ;
+            padding: 75px 0 0 40px;
+
+
+
+            h3{
+                font-size: 64px !important;
+                color: #fff;
+                margin-bottom: 50px;
+                line-height: 1.5; 
+
+            }
+
+            p{
+                color: #fff;
+                font-size: 24px;
+                line-height: 1.5; 
+            }
+        }
+    }
+}

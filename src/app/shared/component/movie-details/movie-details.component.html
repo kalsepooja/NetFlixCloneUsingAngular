@@ -1,0 +1,35 @@
+<div class="movieDetails" *ngIf="movieObj">
+    <div class="heroImg"
+    [style.backgroundImage]="'linear-gradient(90deg, black, transparent), url('+ backgroundImg +')'" 
+    >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="movieInfoCaption">
+                <img src="https://image.tmdb.org/t/p/original/{{movieObj.production_companies[0].logo_path}}"
+                alt=""
+                 class="movieProdLogo">
+                 <h3 class="movieTitle">
+                    {{movieObj.title ?? movieObj.original_title}}
+                 </h3>
+
+                 <ul class="releaseDate text-white">
+                    <li>{{movieObj.releaseDate}}</li>
+                    <li>{{movieObj.adult? 'A' : 'U'}}</li>
+                    <li>{{movieObj.runtime}}</li>
+                    <li>{{getgeners(movieObj.genres)}}</li>
+                 </ul>
+
+                 <p class="overview text-white">
+                    {{movieObj.overview}}
+                 </p>
+
+                 <p class="starring text-white">
+                    Starring:
+                 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
